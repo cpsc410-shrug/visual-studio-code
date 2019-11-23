@@ -96,11 +96,16 @@ export default class Canvas extends React.Component {
 
         return <Visualizer>
             <VisualizerTitle>{currentVisualization}</VisualizerTitle>
-            <OptionsOverlay changeVisualization={this.changeVisualization}
+            <OptionsOverlay 
+                changeVisualization={this.changeVisualization}
                 currentSelection={currentSelection}
                 showOverlay={showOverlay} 
-                toggleOverlay={this.toggleOverlay} />
-            <StyledCanvas id={id} onKeyDown={this.resetVisualization} />
+                toggleOverlay={this.toggleOverlay} 
+            />
+            <StyledCanvas 
+                id={id} 
+                onKeyDown={this.resetVisualization}
+            />
         </Visualizer>;
     }
 }

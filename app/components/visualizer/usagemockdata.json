@@ -1,0 +1,13 @@
+{ 
+  "result": [ {
+  "name": "file.js",
+  "type": "directory",
+  "dependency": [ "react", "react-native" ]
+  },
+  {
+    "name": "file2.js",
+    "type": "file",
+    "dependency": [ "fire-base" ]
+  }
+  ]
+}
