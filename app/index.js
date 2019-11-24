@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import Canvas from './components/visualizer/canvas';
+import ThreeJSCanvas from './components/threejs-visualizer/threejs-canvas'
 import { SidePanel } from './components/visualizer/sidePanel';
 
 const GlobalStyle = createGlobalStyle`
@@ -30,7 +31,8 @@ const IndexPage = () => {
     return <StyledContent>
         <GlobalStyle />
         <SidePanel setUrl={setUrl}/>
-        <Canvas id="dependencyVisualizer" url={url} />
+        {/* <Canvas id="dependencyVisualizer" url={url} /> */}
+        <ThreeJSCanvas/>
     </StyledContent>;
 };
 

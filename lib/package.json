@@ -2,18 +2,24 @@
   "name": "lib",
   "version": "1.0.0",
   "description": "",
-  "main": "upgradePath.js",
+  "main": "app.js",
   "dependencies": {
+    "@octokit/rest": "^16.35.0",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "david": "^11.0.0",
     "eslint": "^6.6.0",
     "express": "^4.17.1",
     "get-repo-package-json": "^2.0.0",
-    "npm-check": "^5.9.0"
+    "npm-check": "^5.9.0",
+    "parse-yarn-lock": "0.28.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Andy Tsang",
   "license": "ISC"

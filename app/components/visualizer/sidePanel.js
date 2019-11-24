@@ -44,7 +44,7 @@ const upperContent = (onSubmit) => {
 
 export const SidePanel = ({ setUrl }) => {
     const form = upperContent((ev) => getRepoUrlFromSubmit(ev, setUrl));
-    return <React.Fragment>
+    return <>
         {form}
         <Description>
             <p>Enter a Github repository URL and click submit. You will be greeted with a visualization of your repository's dependencies. Clicking on an individual node will allow you to visualize the following:</p>
@@ -54,5 +54,5 @@ export const SidePanel = ({ setUrl }) => {
                 <li><strong>Dependency Integration:</strong> the level at which the files in the repository are integrated/use the various dependencies on the project.</li>
             </ul>
         </Description>
-    </React.Fragment>;
+    </>;
 }; 

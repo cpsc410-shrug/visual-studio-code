@@ -4,21 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server"
+    "build": "webpack --env.API_URL=http://localhost:8000",
+    "start": "webpack-dev-server --env.API_URL=http://localhost:8000"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
-    "@octokit/rest": "^16.35.0",
-    "express": "^4.17.1",
+    "cannon": "^0.6.2",
     "lodash": "^4.17.15",
-    "parse-yarn-lock": "^0.28.4",
+    "ramda": "^0.26.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-three-fiber": "^3.0.14",
+    "react-with-gesture": "^4.0.8",
     "styled-components": "^4.4.1",
+    "three": "^0.110.0",
     "vis-network": "^6.4.0"
   },
   "devDependencies": {
