@@ -10,7 +10,7 @@ app.get('/', (req, res) => res.send('Hello World!'))
 /* must call readrepo before calling other end point*/
 app.get('/readrepo', (req, res) => {
     res.status = 200;
-    // console.log(req.query);
+    console.log(req.query);
     controller.readRepo(repoPath).then((result)=> {
         res.send(result);
     })
