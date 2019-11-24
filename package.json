@@ -12,7 +12,10 @@
   "dependencies": {
     "@babel/core": "^7.7.2",
     "@babel/preset-env": "^7.7.1",
+    "@octokit/rest": "^16.35.0",
+    "express": "^4.17.1",
     "lodash": "^4.17.15",
+    "parse-yarn-lock": "^0.28.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^4.4.1",
@@ -28,6 +31,7 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.9.0",
+    "ws": "3.3.2"
   }
 }
