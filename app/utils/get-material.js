@@ -1,8 +1,8 @@
 /**
  * get the material based on the dependency type
  */
-const getMaterial = (dependencyObj) => {
-    return dependencyObj.devDependency ? null : null
+const getMaterial = (type) => {
+    return type == "devDependency" ? null : null
 }
 
 export default getMaterial

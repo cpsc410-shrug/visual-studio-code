@@ -73,7 +73,8 @@ export default class Canvas extends React.Component {
         if (this.state.newNetwork || prevProps.url != this.props.url) {
             this.setState({ newNetwork: false });
             const { currentSelection } = this.state;
-            network(this.props.id, this.clickOnNode, currentSelection);
+            const { currentVisualization } = this.state;
+            network(this.props.id, this.clickOnNode, currentSelection, currentVisualization);
         }
     }
 
@@ -91,7 +92,7 @@ export default class Canvas extends React.Component {
     }
     
     render() {
-        const { id } = this.props;
+        const { id, url } = this.props;
         const { showOverlay, currentSelection, currentVisualization } = this.state;
 
         return <Visualizer>

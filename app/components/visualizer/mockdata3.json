@@ -1,0 +1,488 @@
+{
+  "name": "default",
+  "type": "directory",
+  "subfile": [
+      {
+          "name": ".idea",
+          "type": "directory",
+          "subfile": [
+              {
+                  "name": "inspectionProfiles",
+                  "type": "directory",
+                  "subfile": []
+              }
+          ]
+      },
+      {
+          "name": "auth",
+          "type": "directory",
+          "subfile": [
+              {
+                  "name": "__tests__",
+                  "type": "directory",
+                  "subfile": [
+                      {
+                          "name": "App.js",
+                          "type": "file",
+                          "dependency": [
+                              "react",
+                              "../App",
+                              "react-test-renderer"
+                          ]
+                      },
+                      {
+                          "name": "App.js",
+                          "type": "file",
+                          "dependency": [
+                              "react",
+                              "../App",
+                              "react-test-renderer"
+                          ]
+                      },
+                      {
+                          "name": "App.js",
+                          "type": "file",
+                          "dependency": [
+                              "react",
+                              "../App",
+                              "react-test-renderer"
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "android",
+                  "type": "directory",
+                  "subfile": [
+                      {
+                          "name": "app",
+                          "type": "directory",
+                          "subfile": [
+                              {
+                                  "name": "src",
+                                  "type": "directory",
+                                  "subfile": [
+                                      {
+                                          "name": "main",
+                                          "type": "directory",
+                                          "subfile": [
+                                              {
+                                                  "name": "java",
+                                                  "type": "directory",
+                                                  "subfile": [
+                                                      {
+                                                          "name": "com",
+                                                          "type": "directory",
+                                                          "subfile": [
+                                                              {
+                                                                  "name": "auth",
+                                                                  "type": "directory",
+                                                                  "subfile": []
+                                                              }
+                                                          ]
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "name": "res",
+                                                  "type": "directory",
+                                                  "subfile": [
+                                                      {
+                                                          "name": "mipmap-hdpi",
+                                                          "type": "directory",
+                                                          "subfile": []
+                                                      },
+                                                      {
+                                                          "name": "mipmap-mdpi",
+                                                          "type": "directory",
+                                                          "subfile": []
+                                                      },
+                                                      {
+                                                          "name": "mipmap-xhdpi",
+                                                          "type": "directory",
+                                                          "subfile": []
+                                                      },
+                                                      {
+                                                          "name": "mipmap-xxhdpi",
+                                                          "type": "directory",
+                                                          "subfile": []
+                                                      },
+                                                      {
+                                                          "name": "values",
+                                                          "type": "directory",
+                                                          "subfile": []
+                                                      }
+                                                  ]
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "name": "gradle",
+                          "type": "directory",
+                          "subfile": [
+                              {
+                                  "name": "wrapper",
+                                  "type": "directory",
+                                  "subfile": []
+                              }
+                          ]
+                      },
+                      {
+                          "name": "keystores",
+                          "type": "directory",
+                          "subfile": []
+                      }
+                  ]
+              },
+              {
+                  "name": "ios",
+                  "type": "directory",
+                  "subfile": [
+                      {
+                          "name": "auth-tvOS",
+                          "type": "directory",
+                          "subfile": []
+                      },
+                      {
+                          "name": "auth-tvOSTests",
+                          "type": "directory",
+                          "subfile": []
+                      },
+                      {
+                          "name": "auth.xcodeproj",
+                          "type": "directory",
+                          "subfile": [
+                              {
+                                  "name": "xcshareddata",
+                                  "type": "directory",
+                                  "subfile": [
+                                      {
+                                          "name": "xcschemes",
+                                          "type": "directory",
+                                          "subfile": []
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "name": "auth",
+                          "type": "directory",
+                          "subfile": [
+                              {
+                                  "name": "Base.lproj",
+                                  "type": "directory",
+                                  "subfile": []
+                              },
+                              {
+                                  "name": "Images.xcassets",
+                                  "type": "directory",
+                                  "subfile": [
+                                      {
+                                          "name": "AppIcon.appiconset",
+                                          "type": "directory",
+                                          "subfile": []
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      {
+                          "name": "authTests",
+                          "type": "directory",
+                          "subfile": []
+                      }
+                  ]
+              },
+              {
+                  "name": "src",
+                  "type": "directory",
+                  "subfile": [
+                      {
+                          "name": "component",
+                          "type": "directory",
+                          "subfile": [
+                              {
+                                  "name": "common",
+                                  "type": "directory",
+                                  "subfile": [
+                                      {
+                                          "name": "CardSection.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Card.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Button.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Input.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "index.js",
+                                          "type": "file",
+                                          "dependency": []
+                                      },
+                                      {
+                                          "name": "Header.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Spinner.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Card.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "index.js",
+                                          "type": "file",
+                                          "dependency": []
+                                      },
+                                      {
+                                          "name": "CardSection.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Button.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Header.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Spinner.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Input.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "CardSection.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Header.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Spinner.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Button.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Card.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "Input.js",
+                                          "type": "file",
+                                          "dependency": [
+                                              "react",
+                                              "react-native"
+                                          ]
+                                      },
+                                      {
+                                          "name": "index.js",
+                                          "type": "file",
+                                          "dependency": []
+                                      }
+                                  ]
+                              },
+                              {
+                                  "name": "App.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "react-native",
+                                      "./common",
+                                      "firebase",
+                                      "./LoginForm"
+                                  ]
+                              },
+                              {
+                                  "name": "LoginForm.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "./common",
+                                      "firebase",
+                                      "react-native"
+                                  ]
+                              },
+                              {
+                                  "name": "App.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "react-native",
+                                      "./common",
+                                      "firebase",
+                                      "./LoginForm"
+                                  ]
+                              },
+                              {
+                                  "name": "LoginForm.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "./common",
+                                      "firebase",
+                                      "react-native"
+                                  ]
+                              },
+                              {
+                                  "name": "App.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "react-native",
+                                      "./common",
+                                      "firebase",
+                                      "./LoginForm"
+                                  ]
+                              },
+                              {
+                                  "name": "LoginForm.js",
+                                  "type": "file",
+                                  "dependency": [
+                                      "react",
+                                      "./common",
+                                      "firebase",
+                                      "react-native"
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "name": "index.js",
+                  "type": "file",
+                  "dependency": [
+                      "react-native",
+                      "./src/component/App"
+                  ]
+              },
+              {
+                  "name": "index.js",
+                  "type": "file",
+                  "dependency": [
+                      "react-native",
+                      "./src/component/App"
+                  ]
+              },
+              {
+                  "name": "index.js",
+                  "type": "file",
+                  "dependency": [
+                      "react-native",
+                      "./src/component/App"
+                  ]
+              }
+          ]
+      },
+      {
+          "name": ".idea",
+          "type": "directory",
+          "subfile": []
+      },
+      {
+          "name": "auth",
+          "type": "directory",
+          "subfile": []
+      },
+      {
+          "name": ".idea",
+          "type": "directory",
+          "subfile": []
+      },
+      {
+          "name": "auth",
+          "type": "directory",
+          "subfile": []
+      }
+  ]
+}
