@@ -27,12 +27,14 @@ const StyledContent = styled.div`
 
 const IndexPage = () => {
     const [url, setUrl] = useState(null);
+    const [visualizer3D, setVisualizer3D] = useState(false);
 
     return <StyledContent>
         <GlobalStyle />
-        <SidePanel setUrl={setUrl}/>
-        {/* <Canvas id="dependencyVisualizer" url={url} /> */}
-        <ThreeJSCanvas/>
+        <SidePanel setUrl={setUrl} setVisualizer3D={setVisualizer3D} />
+        {visualizer3D ? 
+            <ThreeJSCanvas/> :
+            <Canvas id="dependencyVisualizer" url={url} />}
     </StyledContent>;
 };
 

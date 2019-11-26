@@ -21,6 +21,11 @@ const Title = styled.p`
     margin: 15px;
     user-select: none;
 `;
+const ToggleContainer = styled.div`
+    align-items: center;
+    display: flex;
+    justify-content: center;
+`;
 const UpperContent = styled.div`
     grid-area: upper;
 `;
@@ -42,7 +47,7 @@ const upperContent = (onSubmit) => {
     </UpperContent>;
 };
 
-export const SidePanel = ({ setUrl }) => {
+export const SidePanel = ({ setUrl, setVisualizer3D }) => {
     const form = upperContent((ev) => getRepoUrlFromSubmit(ev, setUrl));
     return <>
         {form}
@@ -54,5 +59,9 @@ export const SidePanel = ({ setUrl }) => {
                 <li><strong>Dependency Integration:</strong> the level at which the files in the repository are integrated/use the various dependencies on the project.</li>
             </ul>
         </Description>
+        <ToggleContainer>
+            <label for="toggle3DVisualization">Toggle 3D Visualization</label>
+            <input type="checkbox" id="toggle3DVisualization" onClick={(ev) => setVisualizer3D(ev.value)} />
+        </ToggleContainer>
     </>;
 }; 
