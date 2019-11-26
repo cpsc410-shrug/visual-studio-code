@@ -25,6 +25,7 @@ const ToggleContainer = styled.div`
     align-items: center;
     display: flex;
     justify-content: center;
+    padding: 10px 0 0 0;
 `;
 const UpperContent = styled.div`
     grid-area: upper;
@@ -58,11 +59,11 @@ export const SidePanel = ({ setUrl, setVisualizer3D }) => {
                 <li><strong>Upgrade Path:</strong> the most suitable sequence of upgrades for the given dependency such that other dependencies do not break.</li>
                 <li><strong>Sub-Dependencies:</strong> the dependencies not directly installed by the developer, but that are required by the developer's chosen dependencies.</li>
                 <li><strong>Dependency Integration:</strong> the level at which the files in the repository are integrated/use the various dependencies on the project.</li>
-            </ul>
+            </ul>    
+            <ToggleContainer>
+                <label for="toggle3DVisualization">Toggle 3D Visualization</label>
+                <input type="checkbox" id="toggle3DVisualization" onClick={(ev) => setVisualizer3D(ev.value)} />
+            </ToggleContainer>
         </Description>
-        <ToggleContainer>
-            <label for="toggle3DVisualization">Toggle 3D Visualization</label>
-            <input type="checkbox" id="toggle3DVisualization" onClick={(ev) => setVisualizer3D(ev.value)} />
-        </ToggleContainer>
     </>;
 }; 

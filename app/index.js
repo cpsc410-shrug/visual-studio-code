@@ -33,24 +33,8 @@ const StyledContent = styled.div`
 `
 
 const IndexPage = () => {
-<<<<<<< HEAD
-    const [url, setUrl] = useState(null);
-    const [visualizer3D, setVisualizer3D] = useState(false);
-
-    return <StyledContent>
-        <GlobalStyle />
-        <SidePanel setUrl={setUrl} setVisualizer3D={setVisualizer3D} />
-        {visualizer3D ? 
-            <ThreeJSCanvas/> :
-            <Canvas id="dependencyVisualizer" url={url} />}
-    </StyledContent>;
-};
-
-let contentDiv = document.getElementById('content');
-ReactDOM.render(<IndexPage />, contentDiv);
-=======
   const [url, setUrl] = useState(null)
-  const [show3D, setShow3D] = useState(true)
+  const [visualizer3D, setVisualizer3D] = useState(true)
 
   let repoInfo
   let packageInfo
@@ -79,8 +63,8 @@ ReactDOM.render(<IndexPage />, contentDiv);
   return (
     <StyledContent>
       <GlobalStyle />
-      <SidePanel setUrl={setUrl} />
-      {show3D ? (
+      <SidePanel setUrl={setUrl} setVisualizer3D={setVisualizer3D} />
+      {/*visualizer3D ? (
         <ThreeJSCanvas
           dependencies={dependency}
           devDependencies={devDependency}
@@ -88,11 +72,11 @@ ReactDOM.render(<IndexPage />, contentDiv);
         />
       ) : (
         <Canvas id='dependencyVisualizer' url={url} />
-      )}
+      )*/}
+      <Canvas id='dependencyVisualizer' url={url} />
     </StyledContent>
   )
 }
 
 let contentDiv = document.getElementById("content")
 ReactDOM.render(<IndexPage />, contentDiv)
->>>>>>> master
