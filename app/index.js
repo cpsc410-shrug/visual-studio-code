@@ -34,7 +34,7 @@ const StyledContent = styled.div`
 
 const IndexPage = () => {
   const [url, setUrl] = useState(null)
-  const [show3D, setShow3D] = useState(true)
+  const [visualizer3D, setVisualizer3D] = useState(true)
 
   let repoInfo
   let packageInfo
@@ -63,8 +63,8 @@ const IndexPage = () => {
   return (
     <StyledContent>
       <GlobalStyle />
-      <SidePanel setUrl={setUrl} />
-      {show3D ? (
+      <SidePanel setUrl={setUrl} setVisualizer3D={setVisualizer3D} />
+      {/*visualizer3D ? (
         <ThreeJSCanvas
           dependencies={dependency}
           devDependencies={devDependency}
@@ -72,7 +72,8 @@ const IndexPage = () => {
         />
       ) : (
         <Canvas id='dependencyVisualizer' url={url} />
-      )}
+      )*/}
+      <Canvas id='dependencyVisualizer' url={url} />
     </StyledContent>
   )
 }

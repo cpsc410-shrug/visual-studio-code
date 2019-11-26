@@ -65,8 +65,11 @@ export default class Canvas extends React.Component {
     }
 
     clickOnNode(name) {
-        this.changeSelection(name);
-        this.toggleOverlay();
+        const { currentVisualization } = this.state;
+        if (currentVisualization == "Dependencies") {
+            this.changeSelection(name);
+            this.toggleOverlay();
+        }
     }
     
     componentDidUpdate(prevProps) {
